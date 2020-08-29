@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>lybrate3</title>
+  <link rel="apple-touch-icon" href="images/favicon-ios.png"/>
+  <link rel="shortcut icon" href="https://nu.lybcdn.com/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" sizes="192x192" href="https://nu.lybcdn.com/img/push-crew/logo_192_by_192.png">
+  <link rel="manifest" href="manifest.json">
+   <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<header class="navbar" style="background-color:#D32702">
+	<div class="container" >
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+			<a class="navbar-brand" href="#">
+	          <img src="images/lybrate-logo-pure-white-small.png" alt="Lybrate"/>
+	        </a> 
+		</div>
+		<nav class="navbar-collapse collapse" role="navigation" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+		                <a href="#" style="color:white;">Download App</a>
+	              	</li>
+		            <li><a href="#" style="color: white;">Login</a></li>
+		            <li><a href="#" style="color:white;">Signup</a><li>
+                                    <li><a href="#" style="color:white;">For Doctors</a></li>
+                    <li>
+                        <a href="#" style="color:white;">Health Feed</a>
+                    </li>
+		          </ul>           
+        </nav>
+	</div>
+</header>
+<div class="container-fluid a-slideContainer d-zeroGapContainer" id="specialityPage" data-speciality="doctor">
+    <style>
+	#consultOnlineDefault.d-bgImage {
+		background: url('images/bgbg.jpg') no-repeat; height:500px; margin-top: -20px;
+	}	
+	#consultOnlineDefault .a-slideContent h1 {text-transform: capitalize; text-align: center;}
+	#consultOnlineDefault .a-slideContent div .d-subtext {font-size: 25px; line-height: 1.2; margin-bottom: 10px;}
+	#consultOnlineDefault .a-slideContent div .d-text {font-size: 35px; font-weight: bold; line-height: 1.2; margin-bottom: 20px; text-align: center;}
+	#consultOnlineDefault.a-slide .a-slideContent {max-width: 100%;}
+</style>
+<div id="consultOnlineDefault" class="row d-headerPadding a-slide d-bgImage myriadpro-light a-slide-striking" style="color: #ffffff;">
+	<div class="a-slideContent">
+		<div class="container text-center">
+			<div class="row">
+	 			<div class="col-sm-8 col-sm-offset-2 ">
+	 				<div class="myriadpro-light">
+				 		<h2 class="d-subtext" style="color:white; padding-top:100px;" >BEAT TRAFFIC JAM AND CLINIC QUEUES.</h2>
+				 		<h1 style="color:white;">Consult best doctors from anywhere,anytime.</h1>
+				 	</div>
+				 	<style>
+	.a-searchBySpeciality .twitter-typeahead {display: block !important;}
+	.a-searchBySpeciality .tt-dropdown-menu {top: 45px !important; text-align: left;}
+	.a-systemSearch .input-group button {padding-left: 35px; padding-right: 35px;} 
+</style>
+                                    <br>
+<div class="a-searchBySpeciality a-systemSearch">
+	<div class="form-group">
+		<div class="input-group">
+	  		<input type="text" 
+	    	   class="form-control input-lg typeahead a-findDoc" 
+	    	   name="searchSpecility"
+	    	   placeholder="Search by Speciality/Symptom"
+	    	   tabindex="1" style="font-size:14px;"/>
+	    	<span class="input-group-btn">
+		        <button tabindex="1" class="btn btn-lg btn-red d-callToAction" type="button" style="background-color:#D32702;" >Search</button>
+		    </span>
+		</div>
+	</div>
+</div>
+<script>
+$(document).ready(function() {
+	$('.a-findDoc').keypress(function(e){
+    	if(e.keyCode==13){
+    		$('.d-callToAction').click();
+    	}
+  	});
+});
+</script></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2" >
+					<ul class="unstyled clearfix d-iconedBulletPoints" >
+				    	<li class="text-center col-xs-4">
+                                            <img src="images/ic_doctor.png" style="height:62px;" alt="Choose your Doctor">
+					       <div class="d-point">Choose your Doctor</div>
+					    </li>
+					    <li class="text-center col-xs-4">
+					       <img src="images/Rupee-private-icon.png" alt="Pay Consultation Fee">
+					       <div class="d-point">Pay Consultation Fee</div>
+					    </li>
+					    <li class="text-center col-xs-4">
+					       <img src="images/Video-private-icon.png" alt="Talk to the Doctor">
+					       <div class="d-point">Talk to the Doctor</div>
+					    </li>
+				   </ul>
+				</div>
+		 	</div>
+		 </div>
+	</div>
+</div>
+<style>
+	#topCategories {padding-bottom: 25px; border-bottom: 1px solid;}
+	#topCategories h2 {font-size: 28px;}
+	.a-topCategories .d-unit {
+		display: inline-block; text-align: center; width: 250px; padding: 60px;
+		border: 1px solid #ffffff; color: #ffffff;
+		text-transform: capitalize; margin: 7px; font-size: 18px;
+	}
+
+	.d-unit.a-gynaecologist {background: url('images/gynaecologist.jpg') no-repeat;}
+	.d-unit.a-dietician {background: url('images/dietitian-nutritionist.jpg') no-repeat;}
+	.d-unit.a-psychologist {background: url('images/psychologist.jpg') no-repeat;}
+	.d-unit.a-dermatologist {background: url('images/dermatologist.jpg') no-repeat;}
+	.d-unit.a-sexologist {background: url('images/sexologist.jpg') no-repeat;}
+	.d-unit.a-ayurveda {background: url('images/ayurveda.jpg') no-repeat;}
+	.d-unit.a-homeopath {background: url('images/homeopath.jpg') no-repeat;}
+
+	.btn-white {}
+</style>
+    <div id="whyLybrate" class="text-center container myriadpro-light" style="height:350px;"><br>
+            <h2>Why use Lybrate</h2><br>
+	<div class="row">
+		<div class="col-sm-6 col-md-3 a-whyLybrate">
+			<div class="d-image">
+                            <img src="images/ic_doctor_106X106.png" height="75" width="75" alt="90000 verified doctors" />
+			</div>
+			<div class="d-title">
+                            <h4>100,000+ verified doctors</h4>
+			</div>
+			<div class="d-text">
+				All doctors on Lybrate go <br/>
+				through a stringent <br/>
+				verification process
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-3 a-whyLybrate">
+			<div class="d-image">
+				<img src="images/ic_heart_106X106.png" height="75" width="75" alt="Access to healthcare" />
+			</div>
+			<div class="d-title">
+                            <h4>24*7 access to healthcare</h4>
+			</div>
+			<div class="d-text">
+				Easy access to the best<br/>
+				doctors anytime,<br/>
+				anywhere
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-3 a-whyLybrate">
+			<div class="d-image">
+				<img src="images/ic_save_money_106X106.png" height="75" width="75" alt="Save time and money"/>
+			</div>
+			<div class="d-title">
+                            <h4>Save time &amp; money</h4>
+			</div>
+			<div class="d-text">
+				Save upto 70% in time<br/>
+				and money spent for<br/>
+				consultation
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-3 a-whyLybrate">
+			<div class="d-image">
+				<img src="images/ic_time_106X106.png" height="75" width="75" alt="100 percent care guaranteed" />
+			</div>
+			<div class="d-title">
+                            <h4>100% care guaranteed</h4>
+			</div>
+			<div class="d-text">
+				We'll refund your money if<br/>
+				you're not satisfied with<br/>
+				our service
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+    <div id="topCategories" class="text-center myriadpro-light d-whiteItem" style="background-color:white;">
+    <div class="container">
+       <h2>Top Categories</h2>
+       <div class="row">
+           <div class="col-xs-12 a-topCategories">
+               <a class="d-unit a-dietician" href="#">
+                   <div class="d-title">Dietitian/Nutritionist</div>
+               </a>
+               <a class="d-unit a-gynaecologist" href="#">
+                   <div class="d-title">Gynaecologist</div>
+               </a>
+               <a class="d-unit a-psychologist" href="#">
+                   <div class="d-title">Psychologist</div>
+               </a>
+               <a class="d-unit a-dermatologist" href="#">
+                   <div class="d-title">Dermatologist</div>
+               </a>
+               <a class="d-unit a-sexologist" href="#">
+                   <div class="d-title">Sexologist</div>
+               </a>
+               <a class="d-unit a-ayurveda" href="#">
+                   <div class="d-title">Ayurveda</div>
+               </a>
+               <a class="d-unit a-homeopath" href="#">
+                   <div class="d-title">Homeopath</div>
+               </a>
+           </div>
+       </div>
+       <div class="a-viewMoreCategories text-center">
+           <button style="color:#D32702;" class="btn btn-lg btn-link c_red">
+                  View More <img src="images/arrow_24x24.png">
+              </button>
+          </div>
+   </div>
+</div>
+    <section id="topdoctors" style="background-color:white;">
+    <div class="row d-whiteItem" id="doctorListing">
+        <div class="docStripRow">
+        </div>
+        <div class="container col-md-offset-2 col-md-8">
+            <h2 class="text-center myriadpro-light">Top Doctors Helping Patients</h2>   
+            <div class="a-doctorsListing">                  
+        <div class="row"  style="text-align: center; padding: 20px;">
+            <div class="col-xs-12">
+                <div class="d-unit row">
+                    <div class="a-doctorInfo col-xs-12 col-sm-8">
+                        <a href="# " class="a-image" >    
+                            <img src="images/Ayurveda-BhujbalesAyurvedaPilesClinic-Mumbai-0b1a1f.jpg" alt="Dr. Bhujbale's Ayurveda &amp; Piles Clinic - Ayurvedic Doctor, Mumbai">
+                        </a>
+                        <a href="#" style="color:#D32702;" class="a-name" >
+                            <b>Dr.
+                                Bhujbale's Ayurveda &amp; Piles Clinic</b>
+                        </a>
+                        <div class="a-degrees">
+                        </div>
+                        <div class="a-speciality">
+                            Ayurvedic Doctor
+                        </div>
+                        <div class="a-clinicName">
+                            Dr.Bhujbale's Ayurveda and Piles Clinic., Mumbai
+                        </div>
+                        <div class="a-clinicPics"></div>
+                    </div>
+                    <div class="a-callToAction col-xs-12 col-sm-4">
+                        <div class="a-peopleHelped"><span class="i-heart"><img src="images/heart.png" height="20" width="20"></span> 89% (1200 votes)</div>                    
+                    <div class="a-yearsExperience">
+                           <span class="d-number">
+                               <span><img src="images/briefcase.png" height="20" width="20">13 Years Experiance</span>
+                        </span>
+                    </div>
+                    <div class="a-consultationCost">
+                        <span class="i-rupee">
+                            <img src="images/rupee_1.png" height="20" width="20">
+                        </span>
+                        <span class="d-text">INR</span>
+                           <span class="d-number">
+                            350
+                        </span>
+                    </div>
+                        <br>
+                    <div style="background-color:#D32702; width:200px; margin-left:70px;" class="a-consultationOnline" >
+                        <a style="color:white;" class="btn btn-red btn-block" href="#">
+                            Consult Online
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="packages-hidden-view row" style="display: none;" >
+                <div class="col-xs-12 text-center">
+                    <img class="packages-hidden-view-loader" src="images/spinner.gif" style="display:none;">
+                </div>
+                <div class="col-xs-12">
+                    <div class="row packages-view-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row" style="text-align: center;  padding: 20px;" >
+            <div class="col-xs-12">
+                <div class="d-unit row">
+                    <div class="a-doctorInfo col-xs-12 col-sm-8">
+                        <a href="#" class="a-image" >                           
+                            <img src="images/Sexology-LunkadVaibhav-Pune-63a545.jpg" alt="Dr. Pawan Begani - Diabetologist, Surat">                            
+                        </a>
+                        <a href="#" style="color:#D32702;" class="a-name" >
+                            <b> Dr.
+                                Pawan Begani</b>
+                        </a>
+                        <div class="a-degrees">
+                            MBBS, PG in Family Medicine, FDRC
+                        </div>
+                        <div class="a-speciality">
+                            Diabetologist
+                        </div>
+                        <div class="a-clinicName">
+                            BHAGWAN MAHAVIR DIABETES CENTRE, Surat
+                        </div>
+                        <div class="a-clinicPics"></div>
+                    </div>
+                    <div class="a-callToAction col-xs-12 col-sm-4">
+                    <div class="a-peopleHelped"><span class="i-heart"><img src="images/heart.png" height="20" width="20"></span> 90% (251 votes)</div>                    
+                    <div class="a-yearsExperience">
+                           <span class="d-number">
+                               <span class="i-briefCase"><img src="images/briefcase.png" height="20" width="20"></span> 13 Years Experience
+                        </span>
+                    </div>
+                    <div class="a-consultationCost">
+                        <span class="i-rupee">
+                            <img src="images/rupee_1.png" height="20" width="20">
+                        </span>
+                        <span class="d-text">INR</span>
+                           <span class="d-number">
+                            230
+                        </span>
+                    </div>
+                    <br>
+                    <div style="background-color:#D32702; width: 200px; margin-left:70px;" class="a-consultationOnline" >
+                        <a style="color:white;" class="btn btn-red btn-block" href="#">
+                            Consult Online
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="packages-hidden-view row" style="display: none;" >
+                <div class="col-xs-12 text-center">
+                    <img class="packages-hidden-view-loader" src="images/spinner.gif" style="display:none;">
+                </div>
+                <div class="col-xs-12">
+                    <div class="row packages-view-body">
+                    </div>
+                </div>   
+            </div>
+        </div>  
+        </div>   
+        <div class="row" style="text-align: center;  padding: 20px;">
+           <div class="col-xs-12">
+                <div class="d-unit row">
+                    <div class="a-doctorInfo col-xs-12 col-sm-8">
+                        <a href="#" class="a-image" >                           
+                            <img src="images/Gynaecology-ManjuBarik-Ghaziabad-d4ac3e.jpg" alt="Dr. Manju Barik - Gynaecologist, Ghaziabad">                           
+                        </a>
+                        <a href="#" style="color:#D32702;" class="a-name" >
+                            <b> Dr.
+                                Manju Barik</b>
+                        </a>
+                        <div class="a-degrees">
+                            DNB (Obstetrics and Gynecology), MBBS
+                        </div>
+                        <div class="a-speciality">
+                            Gynaecologist
+                        </div>
+                        <div class="a-clinicName">
+                            Femicare Clinic, Ghaziabad
+                        </div>
+                        <div class="a-clinicPics"></div>
+                    </div>
+                    <div class="a-callToAction col-xs-12 col-sm-4">
+                    <div class="a-peopleHelped"><span class="i-heart"><img src="images/heart.png" height="20" width="20"></span> 89% (119 votes)</div>                    
+                    <div class="a-yearsExperience">
+                           <span class="d-number">
+                            <span class="i-briefCase"><img src="images/briefcase.png" height="20" width="20"></span> 37 Years Experience
+                        </span>
+                    </div>
+                    <div class="a-consultationCost">
+                        <span class="i-rupee">
+                            <img src="images/rupee_1.png" height="20" width="20">
+                        </span>
+                        <span class="d-text">INR</span>
+                           <span class="d-number">
+                            300
+                        </span>
+                    </div>
+                    <br>
+                    <div style="background-color:#D32702; width: 200px; margin-left:70px;" class="a-consultationOnline" >
+                        <a style="color:white;" class="btn btn-red btn-block" href="#">
+                            Consult Online
+                        </a>                       
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="packages-hidden-view row" style="display: none;" data-doc-username="dr-manju-barik-gynaecologist">
+                <div class="col-xs-12 text-center">
+                    <img class="packages-hidden-view-loader" src="images/spinner.gif" style="display:none;">
+                </div>    
+                <div class="col-xs-12">
+                    <div class="row packages-view-body">    
+                    </div>    
+                </div>    
+            </div>
+        </div>    
+        </div>
+        <div class="row" style="text-align: center;  padding: 20px;">
+            <div class="col-xs-12">
+                <div class="d-unit row">
+                    <div class="a-doctorInfo col-xs-12 col-sm-8">
+                        <a href="#" class="a-image" >                           
+                            <img src="images/Dermatology-JavaidAhmadBhat-Srinagar-ab61a8.jpg" alt="">                          
+                        </a>
+                        <a href="#" style="color:#D32702;" class="a-name" >
+                            <b> Dr.
+                                Javaid Ahmad Bhat</b>
+                        </a>
+                        <div class="a-degrees">
+                            MD - Physician, PG Diploma In Clinical dermatology
+                        </div>
+                        <div class="a-speciality">
+                           Dermatologist
+                        </div>
+                        <div class="a-clinicName">
+                            Dr. Bhat Skin Laser Hair Transplant Centre, Srinagar
+                        </div>
+                        <div class="a-clinicPics"></div>
+                    </div>
+                    <div class="a-callToAction col-xs-12 col-sm-4">
+                    <div class="a-peopleHelped"><span class="i-heart"><img src="images/heart.png" height="20" width="20"></span> 88% (150 votes)</div>                    
+                    <div class="a-yearsExperience">
+                           <span class="d-number">
+                            <span class="i-briefCase"><img src="images/briefcase.png" height="20" width="20"></span> 18 Years Experience
+                        </span>
+                    </div>
+                    <div class="a-consultationCost">
+                        <span class="i-rupee">
+                            <img src="images/rupee_1.png" height="20" width="20">
+                        </span>
+                        <span class="d-text">INR</span>
+                           <span class="d-number">
+                            350
+                        </span>
+                    </div>
+                    <br>
+                    <div style="background-color:#D32702; width: 200px; margin-left:70px;" class="a-consultationOnline" >
+                        <a style="color:white;" class="btn btn-red btn-block" href="#">
+                            Consult Online
+                        </a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="packages-hidden-view row" style="display: none;" data-doc-username="dr-javaid-ahmad-bhat-dermatologist">
+                <div class="col-xs-12 text-center">
+                    <img class="packages-hidden-view-loader" src="images/spinner.gif" style="display:none;">
+                </div>
+                <div class="col-xs-12">
+                    <div class="row packages-view-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row" style="text-align: center;  padding: 20px;">
+            <div class="col-xs-12">
+                <div class="d-unit row">
+                    <div class="a-doctorInfo col-xs-12 col-sm-8">
+                        <a href="#" class="a-image" >      
+                            <img src="images/PawanBegani-211cfe-pb.jpg" alt="Dr. Lunkad Vaibhav - Sexologist, Pune">    
+                        </a>
+                        <a href="#" style="color:#D32702;" class="a-name" >
+                            <b> Dr.
+                                Lunkad Vaibhav</b>
+                        </a>
+                        <div class="a-degrees">
+                            MBBS, DIiploma in Yoga and Ayurveda
+                        </div>
+                        <div class="a-speciality">
+                            Sexologist
+                        </div>
+                        <div class="a-clinicName">
+                            Aaiina Clinic, Pune
+                        </div>
+                        <div class="a-clinicPics"></div>
+                    </div>
+                    <div class="a-callToAction col-xs-12 col-sm-4">
+                    <div class="a-peopleHelped"><span class="i-heart"><img src="images/heart.png" height="20" width="20"></span> 90% (10851 votes)</div>                    
+                    <div class="a-yearsExperience">
+                           <span class="d-number">
+                            <span class="i-briefCase"><img src="images/briefcase.png" height="20" width="20"></span> 30 Years Experience
+                        </span>
+                    </div>
+                    <div class="a-consultationCost">
+                        <span class="i-rupee">
+                            <img src="images/rupee_1.png" height="20" width="20">
+                        </span>
+                        <span class="d-text">INR</span>
+                           <span class="d-number">
+                            300
+                        </span>
+                    </div>
+                    <br>
+                    <div style="background-color:#D32702; width: 200px; margin-left:70px;" class="a-consultationOnline" >
+                        <a style="color:white;" class="btn btn-red btn-block" href="#">
+                            Consult Online
+                        </a>      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="packages-hidden-view row" style="display: none;" data-doc-username="dr-lunkad-vaibhav-sexologist">
+                <div class="col-xs-12 text-center">
+                    <img class="packages-hidden-view-loader" src="images/spinner.gif" style="display:none;">
+                </div>
+                <div class="col-xs-12">
+                    <div class="row packages-view-body">
+                    </div>   
+                </div>
+    
+            </div>
+        </div>
+        </div>
+    </div>
+               </div>
+    </div>
+  </section>
+<div class="container" style="padding-bottom: 20px;">
+    <div class="row">
+        <h3>Consult Doctor Online at Lybrate For Medical Assistance </h3><p>Forget the hassle of booking appointments! Consult a doctor at your ease with  Lybrate. where we offer premium healthcare services through the network of experienced and certified doctors. Skip the struggle of rush hour and long queues and get expert advice anytime and anywhere. Lybrate gives you access to over 100,000 highly trained medical experts. You get the most excellent medical services by subscribing to Lybrate. Coupled with the most advanced treatments and accurate diagnosis, a subscription to Lybrate can help you get in touch with the most reputed healthcare professionals.</p><p>Get online doctor consultation easily and securely via the Lybrate Platform where different specialized General Physicians, Ayurvedic Doctors, Dietician, Skin Specialists, Sexologists, Gynaecologists, Nutritionists, Psychiatrist are connected to offer medical assistance via a different mode of communication. Now you can get in touch with online doctors 24*7 and healthcare professionals from anywhere and any time by connecting with us. Now Join with Online Doctor Consultion Netowork through Lybrate Platform and App to get to ask health questions freely, health consultations, and easy appointments.</p><h4>Get Online Doctor Consultation - Safe, Secure &amp; Easy </h4><p>Lybrate is the best online doctor consultation app that has revolutionized the way people in India think and take care of their health and fitness needs. Doctor connected with Lybrate Highly Experienced and Professionally trained. Many of them hold an experience of over 20 years and serve the best for their patients. Now connect with Professional and Experience Doctor anytime and anywhere you need it, Lybrate helps patients to connect Doctors which are beyond, cities, states, and even countries boundaries. A smart way to seek the answer to your health queries from a highly experienced doctor online.</p><p>Best Medical platform to provide online doctor consultation connecting over 10 million users to over 100,000 top doctors of the country. All Doctors go through a stringent verification process on Lybrate. Getting the best solution for your problem is just one click away from you. Visit the official website of the Lybrate or Download Lybrate app to consult Doctor online. Within an hour, you will get the best solution for your problem.</p><h4>Consult with Verified Doctors Online Privately</h4><p>Health Information and Personal Details provided by person or patients during the process of consultation will remain confidential. Lybrate assured you 100% Privacy Protection, as the data provided by the patients is very important and we at Lybarte agree to this. Patients need not worry as all the data is protected and safeguarded.</p><p>At Lybrate, we provide secured medical assistance at very affordable prices. Since all advice &amp; consultations are kept entirely confidential, hence, you can share a comprehensive history of your medical concerns to the doctor without any doubt. Consult specialized and experienced doctors online and get immediate medical consultation and advice for your health problems only at Lybrate.</p><h4>Different Mode of Consultation with Doctors Online</h4><p> As technologies are filling the gap in the availability of healthcare. These technologies also help in providing quality treatment to patients living in remote areas of the country and might need medical attention. These different modes of online consultation with doctors are available, which are completely safe, secured, and hassle-free.</p><p>At Lybrate, Patients can connect with registered experienced Doctors using these technologies. Here we are offering 3 Consultation modes to the patient to exchange health data information via <strong>Text or Chat, Phone, and Video Consultation</strong> to get a medical assistant. A Doctor &amp; Patient should choose the ?most suitable technology? for effective consultation. While an audio mode of interaction may be better over a text consultation for diagnoses of some patients, in other cases, the doctor may need to visually examine a patient through a video call.</p><p>You can select the best methods to connect Doctor online and get healthcare advices to inform of - Audio Call, Video Call, or Text Consultation. For example, for first aid services or the minor treatments, a text consultation works fine and patients are happy as well as satisfied. A video consultation has become another practical way to take care of your health. At Lybrate, all of these online consultations methods are the least expensive and effective way to see your doctor.</p><h4>How Online Doctor Consultation Process Works at Lybrate? </h4><p>Now Consult with Professional Doctor Online at Lybrate privately by following Steps. Online Doctor consultation process works very easily and effortlessly. Here are the steps that you should follow to consult:</p><ul><li><strong>Step 1: Select Doctor :-</strong>You can select the Doctor according to Speciality and Symptoms. You can also search Doctor easily from Search panel from anywhere and anytime. Also, check out complete Doctor Details such as Doctor Experience, Doctor Rating, and more.</li><li><strong>Step 2: Select Preferred Consultation Mode :-</strong> After selecting a Doctor, you can choose a suitable mode out of them to help the doctor understand your case better. Here 3 Mode of Communication are offered, you can consult a Doctor online through Text or Chat, Phone and Video Call.</li><li><strong>Step 3: Describe Purpose of Consultation in Details-</strong> Here you need to share some basic info about yourself which is only visible only to the doctor as per medical guidelines and List down your concern and share the medical history and rest of the details.</li><li><strong>Step 4: Pay Consultation Fee Online :-</strong>Medical assistance is available at very cost-effective rates. You can pay via different Payment modes such as Google pay, Debit / Credit cards, Paypal, Paytm Wallet, Amazon Pay, PhonePe, Freecharge, and more.</li><li><strong>Step 5: Connect with Doctor:-</strong> Get in touch with your doctor to get a diagnosis and appropriate treatment for your medical condition.</li></ul><h4>Refund Policy on Online Doctor Consultation</h4><p>We have a Refund policy on consultation at Lybrate. If a patient is not satisfied with the online consultation, they can write to us. We will evaluate the consultation with the doctor for further clarification. 100% refund will be granted in genuine circumstances.</p></div>
+  </div>
+<div class="footer" style="background-color:#737373;">
+    <div class="container"><br><br>
+      <div class="row footer-inner">
+        <div class="col-xs-12 col-sm-9">
+           <div class="row-fluid">
+    <div class="col-xs-12 col-sm-3">
+      <ul class="unstyled">
+          <li class="section-title" style="color:#C7C7C7;">DELHI</li><br>
+        <li><a href="#" style="color: white;">Dentist in Delhi</a></li>
+        <li><a href="#" style="color: white;">General Physicians in Delhi</a></li>
+        <li><a href="#" style="color: white;">Cardiologist in Delhi</a></li>
+        <li><a href="#" style="color:white;">Gynaecologist in Delhi</a></li>
+        <li><a href="#" style="color: white;;">Psychiatrist in Delhi</a></li>
+        <li><a href="#" style="color:white;">Dermatologist in Delhi</a></li>
+        <li><a href="#" style="color:white;">Neurologist in Delhi</a></li>
+        <li><a href="#" style="color:white;;">Urologist in Delhi</a></li>
+        <li><a href="#" style="color:white;">Ophthalmologist in Delhi</a></li>
+        <li><a href="#" style="color:white;">Sexologist in Delhi</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <ul class="unstyled">
+          <li class="section-title" style="color:#C7C7C7;"style="">MUMBAI</li><br>
+          <li><a href="#"style="color:white;">Dentist in Mumbai</a></li>
+          <li><a href="#"style="color:white;">General Physicians in Mumbai</a></li>
+          <li><a href="#"style="color:white;">Cardiologist in Mumbai</a></li>
+          <li><a href="#"style="color:white;">Gynaecologist in Mumbai</a></li>
+          <li><a href="#"style="color:white;">Psychiatrist in Mumbai</a></li>
+          <li><a href="#"style="color:white;">Dermatologist in Mumbai</a></li>
+          <li><a href="#"style="color:white;">Neurologist in Mumbai</a></li>
+          <li><a href="#"style="color:white;">Urologist in Mumbai</a></li>
+          <li><a href="#"style="color:white;">Ophthalmologist in Mumbai</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <ul class="unstyled">
+          <li class="section-title" style="color:#C7C7C7;">CHENNAI</li><br>
+      <li><a href="#" style="color:white;">Dentist in Chennai</a></li>
+      <li><a href="#" style="color:white;">General Physicians in Chennai</a></li>
+      <li><a href="#" style="color:white;">Cardiologist in Chennai</a></li>
+      <li><a href="#" style="color:white;">Gynaecologist in Chennai</a></li>
+      <li><a href="#" style="color:white;">Psychiatrist in Chennai</a></li>
+      <li><a href="#" style="color:white;">Dermatologist in Chennai</a></li>
+      <li><a href="#" style="color:white;">Neurologist in Chennai</a></li>
+      <li><a href="#" style="color:white;">Urologist in Chennai</a></li>
+      <li><a href="#" style="color:white;">Ophthalmologist in Chennai</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <ul class="unstyled">
+          <li class="section-title" style="color:#C7C7C7;">BANGALORE</li><br>
+        <li><a href="#" style="color:white;">Dentist in Bangalore</a></li>
+      <li><a href="#" style="color:white;">General Physicians in Bangalore</a></li>
+      <li><a href="#" style="color:white;">Cardiologist in Bangalore</a></li>
+      <li><a href="#" style="color:white;">Gynaecologist in Bangalore</a></li>
+      <li><a href="#" style="color:white;">Psychiatrist in Bangalore</a></li>
+      <li><a href="#" style="color:white;">Dermatologist in Bangalore</a></li>
+      <li><a href="#" style="color:white;">Neurologist in Bangalore</a></li>
+      <li><a href="#" style="color:white;">Urologist in Bangalore</a></li>
+     <br><br>
+      </ul>
+    </div>
+  </div></div>
+        <div class="col-xs-12 col-sm-3">
+            <div class="section-title" style="color:#C7C7C7;">&nbsp;&nbsp;&nbsp;&nbsp;Lybrate.com</div><br>
+          <div>
+            <ul class="unstyled">
+              <li><a href="#" style="color:white;">About Us</a></li>
+              <li><a href="#" style="color:white;">Careers</a></li>
+              <li><a href="#" style="color:white;">Mobile Apps</a></li>
+              <li><a href="#" style="color:white;">Blog</a></li>
+              <li><a href="#" style="color:white;">Terms of Use</a></li>
+              <li><a href="#" style="color:white;">Privacy Policy</a></li>
+              <li><a href="#" style="color:white;">Press</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-outer">
+        <div class="col-xs-12 col-sm-9 text-center">
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">City Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Locality City Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Specialty Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Specialty City Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Health Wiki</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Health Tips Index</a><br><br>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Health Questions Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Health Quizzes Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Health Topics Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Medicines Index</a>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Ailment Index</a><br><br>
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Health Packages
+          <a href="#" class="footer-item" style="color:white; padding: 20px;">Lab Test Details Index</a>
+        </div>
+        <div class="col-xs-12 col-sm-3 social text-center">
+          <a href="#">
+              <img src="images/facebook_small.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </a>
+          <a href="#">
+              <img src="images/twitter_small.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </a>
+          <a href="#">
+            <img src="images/linkedin_small.png" />
+          </a>
+        </div>
+      </div>
+      <div class="row footer-copyright">
+          <div class="col-xs-12 text-center" style="color:white; font-size:15px;"><br><br>
+         ©2020 Lybrate, Inc. All rights reserved.
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
